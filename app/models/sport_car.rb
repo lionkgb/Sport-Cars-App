@@ -1,0 +1,2 @@
+class SportCar < ApplicationRecord
+end

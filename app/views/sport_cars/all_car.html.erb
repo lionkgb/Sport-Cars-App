@@ -1,0 +1,28 @@
+<h1 class="title1">Sport Cars</h1>  
+  <table id="t01">
+    <tr>
+      <th>Car Manufacturer</th>
+      <th>Car Model</th>
+      <th>Country of Origin</th>
+    </tr>
+    <% @all_car.each do |car| %>
+    <tr>
+       <td><%= car.manufacturer %></td>
+       <td><%= car.model %></td>
+       <td><%= car.origin_country %></td>
+    </tr>
+   <% end %>
+
+  </table>
+<p class="ferrari"><img src="<%=@car1.image %>" alt="Ferrari" style="float:left;width:500px;">
+Ferrari</p>
+<p class="jaguar"><img src="<%=@car2.image %>" alt="Jaguar" style="float:left;width:500px;">
+Jaguar</p>
+<p class="porsche"><img src="<%=@car3.image %>" alt="Porsche" style="float:left;width:500px;">
+Porsche</p>
+<!-- <img src = "<%= @car1.image %>" alt= "Ferrari" style="width:500px">
+<img src = "<%= @car2.image %>" alt= "Jaguar" style="width:500px">
+<img src = "<%= @car3.image %>" alt= "Porsche" style="width:500px"> -->
+
+
+
