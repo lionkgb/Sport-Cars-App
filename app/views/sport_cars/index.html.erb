@@ -4,22 +4,23 @@
       <th>Car Manufacturer</th>
       <th>Car Model</th>
       <th>Country of Origin</th>
+      <th>Image</th>
     </tr>
-    <% @all_car.each do |car| %>
+    <% @sport_cars.each do |sport_car| %>
     <tr>
-       <th><%= car.manufacturer %></th>
-       <th><%= car.model %></th>
-       <th><%= car.origin_country %></th>
+       <td><%= sport_car.manufacturer %></td>
+       <td><%= sport_car.model %></td>
+       <td><%= sport_car.origin_country %></td>
+       <td><img src="<%= sport_car.image %>"></td>
     </tr>
    <% end %>
-
   </table>
-<p class="ferrari"><img src="<%=@car1.image %>" alt="Ferrari" style="float:left;width:500px;">
+<!-- <p class="ferrari"><img src="<%=@car1.image %>" alt="Ferrari" style="float:left;width:500px;">
 Ferrari</p>
 <p class="jaguar"><img src="<%=@car2.image %>" alt="Jaguar" style="float:left;width:500px;">
 Jaguar</p>
 <p class="porsche"><img src="<%=@car3.image %>" alt="Porsche" style="float:left;width:500px;">
-Porsche</p>
+Porsche</p> -->
 <!-- <img src = "<%= @car1.image %>" alt= "Ferrari" style="width:500px">
 <img src = "<%= @car2.image %>" alt= "Jaguar" style="width:500px">
 <img src = "<%= @car3.image %>" alt= "Porsche" style="width:500px"> -->

@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get "/firstcar", to:"sport_cars#first_car"
-  get "/allcar", to:"sport_cars#all_car"
+  get "/sport_cars/:id", to:"sport_cars#show"
+  get "/sport_cars", to:"sport_cars#index"
 end
