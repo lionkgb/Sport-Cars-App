@@ -1,0 +1,19 @@
+<h1>Edit Recipe</h1>
+ 
+ <%= form_tag "/sport_cars/#{@sport_car.id}", method: :patch do %>
+   <div>
+     Manufacturer: <input type="text" name="manufacturer" value="<%= @sport_car.manufacturer %>">
+   </div>
+   <div>
+     Model: <input type="text" name="model" value="<%= @sport_car.model %>">
+   </div>
+   <div>
+     Country of Origin: <input type="text" name="origin_country" value="<%= @sport_car.origin_country %>">
+   </div>
+   <div>
+     Image: <input type="text" name="image" value="<%= @sport_car.image %>">
+   </div>
+   <div>
+     <input type="submit" value="Edit parameters">
+   </div>
+ <% end %> 

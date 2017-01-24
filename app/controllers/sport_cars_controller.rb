@@ -20,6 +20,22 @@ class SportCarsController < ApplicationController
     origin_country = params[:origin_country]
     image = params[:image]
     sport_car = SportCar.new({manufacturer: manufacturer, model: model, origin_country: origin_country, image: image })
-    recipe.save
+    sport_car.save
   end 
+  def edit 
+    @sport_car = SportCar.find_by(id: params[:id])
+  end 
+
+  def update 
+    @sport_car = SportCar.find_by(id: params[:id])
+    @sport_car.manufacturer = params[:manufacturer]
+    @sport_car.model = params[:model]
+    @sport_car.origin_country = params[:origin_country]
+    @sport_car.image = params[:image]
+    @sport_car.save
+  end 
+  def destroy
+    @sport_car = SportCar.find_by(id: params[:id])
+    @sport_car.destroy 
+  end
 end

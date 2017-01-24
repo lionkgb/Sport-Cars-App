@@ -3,4 +3,6 @@
 <h3><%= @sport_car.model%></h3>
 <h3><%= @sport_car.origin_country%><h3>
 <img src ="<%= @sport_car.image %>">
-
+<%= form_tag "/sport_cars/#{@sport_car.id}", method: :delete do %>
+<button class="btn btn-default" type="delete">Delete</button>
+<%end%>
