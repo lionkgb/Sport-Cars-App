@@ -1,0 +1,19 @@
+<h1>New Sport Car</h1>
+
+<%= form_tag "/sport_cars", method: :post do %>
+  <div>
+   Manufacturer: <input type="text" name="manufacturer">
+  </div>
+  <div>
+   Model: <input type="text" name="model"> 
+  </div>
+  <div>
+   Country of Origin: <input type="text" name="origin_country">
+  </div>
+  <div>
+   Image: <input type="text" name="image">
+  </div>
+  <div>
+   <input type="submit" name="Create sport_car">
+  </div>
+<% end %> 

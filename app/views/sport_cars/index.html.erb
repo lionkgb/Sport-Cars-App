@@ -8,9 +8,9 @@
     </tr>
     <% @sport_cars.each do |sport_car| %>
     <tr>
-       <td><%= sport_car.manufacturer %></td>
-       <td><%= sport_car.model %></td>
-       <td><%= sport_car.origin_country %></td>
+       <td> Manufacturer:<%= sport_car.manufacturer %></td>
+       <td>Model:<%= sport_car.model %></td>
+       <td>Country_of_Origin<%= sport_car.origin_country %></td>
        <td><img src="<%= sport_car.image %>"></td>
     </tr>
    <% end %>

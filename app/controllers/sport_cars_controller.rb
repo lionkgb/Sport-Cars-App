@@ -12,4 +12,14 @@ class SportCarsController < ApplicationController
   def show 
     @sport_car = SportCar.find_by(id: params[:id])
   end 
+  def new
+  end
+  def create 
+    manufacturer = params[:manufacturer]
+    model = params[:model]
+    origin_country = params[:origin_country]
+    image = params[:image]
+    sport_car = SportCar.new({manufacturer: manufacturer, model: model, origin_country: origin_country, image: image })
+    recipe.save
+  end 
 end
